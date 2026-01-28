@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm Up Activity</title>
+
+        <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+          
+
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:#15324d;
+            color: #15324d;
+
+            margin: 0;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+            font-size: 0.9rem; font-weight: 750;
+            text-align: center;
+
+        }
+        .num1{
+            margin: 9px;
+            padding: 9px;
+            border-color: white;
+            background-color: cornflowerblue;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+        
+         .num2{
+           margin: 9px;
+            padding: 9px;
+            border-color: white;
+            background-color: cornflowerblue;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+         .num3{
+             margin: 9px;
+            padding: 9px;
+            border-color: white;
+            background-color: cornflowerblue;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+    
+         .num4{
+             margin: 9px;
+            padding: 9px;
+            border-color: white;
+            background-color: cornflowerblue;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+        
+         .num5{
+            margin: 9px;
+            padding: 9px;
+            border-color: white;
+            background-color: cornflowerblue;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+     
+        
+        }
+        
+        .Calculate{
+            margin: 15px;
+            padding: 15px;
+            border-color: cornflowerblue;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+
+        }
+        ::placeholder {
+        color: #15324d;
+         font-style: italic;
+  
+}
+        .box{
+            background-color: lightskyblue;
+            padding: 75px;
+            border-color: whitesmoke;
+            border-radius: 24px;
+            border-style: solid;
+            border-width: 4px;
+            height: 50vh;
+        }
+
+        
+        
+    </style>
+
+</head>
+<body>
+    <body>
+    
+    <div class="box">
+        <h2>Calculate the Average</h2>
+
+        <input type="number" id="num1" class="num1"  placeholder="Enter Number 1"> <br>
+        <input type="number" id="num2" class="num2"  placeholder="Enter Number 2"> <br>
+        <input type="number" id="num3" class="num3"  placeholder="Enter Number 3"> <br>
+        <input type="number" id="num4" class="num4"  placeholder="Enter Number 4"> <br>
+        <input type="number" id="num5" class="num5"  placeholder="Enter Number 5"> <br>
+        
+        <br>
+        <button onclick="AddSum()" class="Calculate">Calculate</button>
+
+        <div id="Result"> </div>
+    </div>
+
+    <script>
+        function AddSum(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 =  Number(document.getElementById("num2").value);
+            let n3 =  Number(document.getElementById("num2").value);
+            let n4 =  Number(document.getElementById("num2").value);
+            let n5 =  Number(document.getElementById("num2").value);
+            
+            
+            let sum = n1 + n2 + n3 + n4 + n5;
+            let avg = sum/5
+
+            document.getElementById("Result").innerHTML = "Result: " +  avg;
+
+        }
+
+    </script>
+    
+</body>
+</html>
